@@ -1,0 +1,18 @@
+/* THIS IS FOR THE SECTIONS */
+@import "./header";
+
+/* MADE UP SAFE SPACE */
+.container {
+	width: auto;
+	max-width: 1700px;
+}
+
+/* THESE ARE GENERAL VALUES PER SECTION */
+.background {
+	background-image: url(../img/wallpaper_1.png);
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	padding: 8%;
+}

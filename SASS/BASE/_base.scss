@@ -1,0 +1,19 @@
+/* THIS IS FOR ALL THE BASIC ELEMENTS */
+@import "./normalize";
+/* PROJECT START */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0%;
+	padding: 0%;
+}
+body {
+	font-family: "Quicksand", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+hr {
+	background: white;
+	border: 1px solid white;
+}
