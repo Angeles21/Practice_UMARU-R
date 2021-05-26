@@ -1,0 +1,19 @@
+.second,
+.third,
+.fourth,
+.sixth,
+.seventh,
+.footer {
+	&__flex {
+		display: flex;
+		flex-direction: row;
+		text-align: center;
+		align-items: center;
+		padding: 9vh;
+		justify-content: center;
+	}
+	&__element {
+		padding: 10px;
+		flex: 50%;
+	}
+}

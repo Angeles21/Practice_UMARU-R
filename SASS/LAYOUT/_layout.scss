@@ -1,18 +1,172 @@
 /* THIS IS FOR THE SECTIONS */
 @import "./header";
+@import "./flex";
 
 /* MADE UP SAFE SPACE */
 .container {
 	width: auto;
 	max-width: 1700px;
 }
+/** THESE ARE FONT VALUES */
+/*FOR MINI TITLES*/
+.minimum {
+	font-size: 1em;
+	padding-bottom: 1em;
+	text-align: center;
+	color: rgb(240, 112, 43);
+}
+/*FOR BIG TITLES*/
+.maximum {
+	font-size: 4rem;
+	text-align: center;
+	color: rgb(51, 50, 50);
+}
+/*FOR ALL H4*/
+.filler {
+	font-size: 30px;
+	padding-top: 2vh;
+	color: rgb(240, 112, 43);
+}
+/* FOR THE TEXT */
+.fuller {
+	font-size: 17px;
+	padding-top: 4vh;
+	text-align: center;
+	color: rgb(58, 58, 58);
+}
+/*FOR THE LINKS */
+
+.common {
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 0;
+	color: rgb(240, 112, 43);
+}
 
 /* THESE ARE GENERAL VALUES PER SECTION */
+/*! FIRST !*/
 .background {
 	background-image: url(../img/wallpaper_1.png);
 	height: 100vh;
+	width: auto;
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
-	padding: 8%;
+	margin: 0%;
+}
+/*!SECOND!*/
+.second {
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+	&__flex {
+		padding: 3vh 10vh;
+	}
+
+	&__element {
+		padding: 3vh;
+	}
+
+	&__logo {
+		width: 300px;
+		height: 300px;
+		padding: 0;
+	}
+}
+
+/*! THIRD & SIXTH !*/
+.third {
+	margin-top: 10vh;
+	padding: 2vh;
+}
+
+.third,
+.sixth {
+	background: rgb(255, 134, 90);
+	&__text {
+		text-align: left;
+		padding: 2vh;
+	}
+}
+
+/*! FOURTH !*/
+.fourth {
+	&__flex {
+		margin-top: 4vh;
+		margin-bottom: 4vh;
+	}
+	&__logo {
+		width: 150px;
+		height: 150px;
+	}
+}
+
+/* !FIFTH! */
+.fifth {
+	&__flex {
+		max-width: 1600px;
+	}
+	&__wrapper {
+		text-align: center;
+		padding-top: 6vh;
+	}
+	&__block {
+		display: inline-flex;
+		align-items: center;
+		padding: 5vh;
+	}
+	&__text {
+		padding: 6vh;
+		font-size: 1.5em;
+	}
+	&__circle {
+		border: 10px solid rgb(255, 134, 90);
+		border-radius: 50%;
+	}
+	&__sub {
+		font-size: 1em;
+	}
+}
+
+/*! SIXTH !*/
+.sixth {
+	.discover {
+		padding: 20px 80px;
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+}
+
+/*! SEVENTH !*/
+.seventh {
+	margin-top: 4vh;
+	padding: 3vh 1vh;
+	&__text {
+		padding: 2vh 3vh;
+	}
+
+	&__bg {
+		background-color: rgb(255, 134, 90);
+		border-radius: 10px;
+		padding: 4vh;
+	}
+	&__quote {
+		margin-top: 1vh;
+	}
+	&__quote--item {
+		font-size: 4em;
+	}
+	&__block {
+		display: inline-flex;
+	}
+	&__image {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		padding: 2vh;
+	}
+	&__description {
+		padding: 4vh 1vh;
+		text-align: left;
+		color: white;
+	}
 }

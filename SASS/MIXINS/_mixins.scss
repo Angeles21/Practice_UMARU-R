@@ -1,25 +1,189 @@
 /* THIS IS FOR ALL THE MEDIA QUERIES */
 /* MINIMUM RES */
+@media only screen and (max-width: 768px) {
+	.capsule {
+		padding: 0 2rem;
+		margin: 0 auto;
+	}
+	.header {
+		.navbar {
+			padding: 1rem 0;
+			display: block;
+			.wrapper {
+				label {
+					font-size: 4rem;
+					cursor: pointer;
+					outline: none;
+					border: none;
+					padding-left: 2rem;
+				}
 
-@media (min-width: 48em) {
-	.header li {
-		float: left;
-	}
-	.header li a {
-		padding: 20px 30px;
-	}
-	.header .menu {
-		clear: none;
-		float: right;
-		max-height: none;
-	}
-	.header .menu-icon {
-		display: none;
+				input[type="checkbox"]:checked + ul {
+					display: block;
+				}
+
+				.menu {
+					display: none;
+					.header__elements {
+						.header__link {
+							padding: 1rem 1.5rem;
+						}
+					}
+				}
+			}
+		}
 	}
 }
+
+@media only screen and (min-width: 769px) {
+	.header {
+		.navbar {
+			.wrapper {
+				> label,
+				input[type="checkbox"] {
+					display: none;
+				}
+				.menu {
+					.header__elements {
+						display: inline-block;
+
+						.header__link {
+							padding: 15px 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width: 769px) {
+	.header {
+		.navbar {
+			.wrapper {
+				> label,
+				input[type="checkbox"] {
+					display: none;
+				}
+				.menu {
+					.header__elements {
+						display: inline-block;
+
+						.header__link {
+							padding: 15px 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/** QUERY FOR BG **/
+@media (max-width: 800px) {
+	.background {
+		background-image: url(../img/wallpaper_2.png);
+		height: 100vh;
+		width: auto;
+	}
+}
+
+/** QUERIES FOR THE BACKGROUND TYPOGRAPHY**/
+@media (max-width: 900px) {
+	.header__logo {
+		display: none;
+	}
+	.background {
+		padding: 8%;
+		&__text {
+			padding: 0;
+			margin: 0;
+			position: relative;
+			left: 3vh;
+		}
+		&__textmain {
+			position: relative;
+			top: -5vh;
+		}
+		&__textlight {
+			display: none;
+		}
+		&__text {
+			padding: 0;
+			margin: 0;
+			position: relative;
+			left: 3vh;
+		}
+	}
+	.btn {
+		padding: 5px 80px;
+		margin: 0;
+		position: relative;
+		bottom: 3vh;
+		font-size: 2em;
+		border: 5px solid rgb(255, 255, 255);
+	}
+}
+
+@media (max-width: 500px) {
+	.background__textmain {
+		font-size: 3.6rem;
+	}
+}
+
+/** QUERIES FOR RESPONSIVE FLEX **/
 
 @media (max-width: 800px) {
 	.background {
 		background-image: url(../img/wallpaper_2.png);
+	}
+
+	.second__flex,
+	.third__flex,
+	.fourth__flex,
+	.sixth__flex,
+	.seventh__flex,
+	.footer__flex {
+		flex-direction: column;
+		padding: 2vh;
+	}
+
+	.third {
+		&__image {
+			display: none;
+		}
+		&__text {
+			padding-bottom: 6vh;
+		}
+		.joyful {
+			padding: 20px 70px;
+			font-size: 1.3em;
+		}
+	}
+
+	.fifth {
+		&__block {
+			padding: 2vh;
+			flex-direction: column;
+		}
+		&__text {
+			padding: 2vh;
+			font-size: 1em;
+		}
+	}
+	.sixth {
+		padding: 2vh;
+		h4 {
+			font-size: 1.5em;
+			margin-bottom: 4vh;
+		}
+		.discover {
+			font-size: 1em;
+		}
+	}
+
+	.eight {
+		display: none;
+	}
+	.fuller {
+		font-size: 1em;
 	}
 }

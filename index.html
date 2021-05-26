@@ -16,33 +16,310 @@
 	<body>
 		<!-- THIS IS THE FIRST CONTAINER-->
 		<header class="header">
-			<!-- THIS IS THE LOGO -->
-			<a href="#"><img class="header__logo" src="./img/logo_1.png" /></a>
-			<!-- THIS IS THE TOGGLE -->
-			<input class="menu-btn" type="checkbox" id="menu-btn" />
-			<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-			<!-- THIS IS THE LIST OF THE MENU-->
-			<ul class="menu">
-				<li class="menu__item">
-					<a class="menu__itemlink" href="#homek">Home</a>
-				</li>
-				<li class="menu__item">
-					<a class="menu__itemlink" href="#about">About</a>
-				</li>
-				<li class="menu__item">
-					<a class="menu__itemlink" href="#projects">Projects</a>
-				</li>
-				<li class="menu__item">
-					<a class="menu__itemlink" href="#news">News</a>
-				</li>
-				<li class="menu__item">
-					<a class="menu__itemlink" href="#contact">Contact</a>
-				</li>
-			</ul>
+			<div class="capsule">
+				<nav class="navbar">
+					<!-- THIS IS THE LOGO -->
+					<a href="#"><img class="header__logo" src="./img/logo_1.png" /></a>
+					<div class="wrapper">
+						<label for="toggle"><i>≡</i></label>
+						<input type="checkbox" id="menu" />
+						<ul class="menu">
+							<li class="header__elements">
+								<a class="header__link" href="#">Home</a>
+							</li>
+							<li class="header__elements">
+								<a class="header__link" href="#">About</a>
+							</li>
+							<li class="header__elements">
+								<a class="header__link" href="#">Projects</a>
+							</li>
+							<li class="header__elements">
+								<a class="header__link" href="#">News</a>
+							</li>
+							<li class="header__elements">
+								<a class="header__link" href="#">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
 		</header>
 		<!-- THIS IS THE BACKGROUND -->
 		<div class="first container">
-			<div class="background"></div>
+			<div class="background">
+				<div class="background__text">
+					<h1 class="background__textmain">
+						Clean, simple & <br />
+						minimal
+					</h1>
+					<h2 class="background__textlight">Let's dive into a world of color and fun!</h2>
+					<br />
+					<button type="button" class="btn up">Learn More</button>
+				</div>
+			</div>
+		</div>
+		<!-- THIS IS THE SECOND CONTAINER -->
+		<div class="second container">
+			<div class="second__text">
+				<h3 class="minimum">We have 10 years in the market</h3>
+				<hr />
+				<h2 class="maximum">Come celebrate with us!</h2>
+			</div>
+			<div class="second__flex">
+				<div class="second__element">
+					<img class="second__logo" src="img/small_1.png" />
+					<h4 class="filler">Creative Concept</h4>
+					<p class="fuller">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus aut sapiente
+						srchitecto eos omnis libero assumenda rem repellat minus?Accusantium earum
+					</p>
+					<br />
+					<a class="common" href="#"> ➼ Click here for more </a>
+				</div>
+				<div class="second__element">
+					<img class="second__logo" src="img/small_1.png" />
+					<h4 class="filler">Creative Concept</h4>
+					<p class="fuller">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus aut sapiente
+						srchitecto eos omnis libero assumenda rem repellat minus?Accusantium earum
+					</p>
+					<br />
+					<a class="common" href="#"> ➼ Click here for more </a>
+				</div>
+				<div class="second__element">
+					<img class="second__logo" src="img/small_1.png" />
+					<h4 class="filler">Creative Concept</h4>
+					<p class="fuller">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus aut sapiente
+						srchitecto eos omnis libero assumenda rem repellat minus?Accusantium earum
+					</p>
+					<br />
+					<a class="common" href="#"> ➼ Click here for more </a>
+				</div>
+			</div>
+		</div>
+		<!-- THIS IS THE THIRD CONTAINER -->
+		<div class="third container">
+			<div class="third__flex">
+				<div class="third__image">
+					<img style="width: 100%; height: auto" src="img/img_1.png" />
+				</div>
+				<div class="third__block">
+					<div class="third__text">
+						<h4 class="minimum" style="text-align: left; color: rgb(58, 58, 58)">
+							Joyful moments ahead!
+						</h4>
+						<h3 class="maximum" style="text-align: left; color: white">
+							Having fun everyday, <br />
+							that's Umaru!
+						</h3>
+						<p class="fuller" style="text-align: left">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Nesciunt
+							perferendis exercitationem raesentium sunt <br />aut error amet, vero
+							dignissimos provident, fugiat
+						</p>
+						<p class="fuller" style="text-align: left">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Nesciunt
+							perferendis exercitationem raesentium sunt <br />aut error amet, vero
+							dignissimos provident, fugiat
+						</p>
+					</div>
+					<br />
+					<button class="btn joyful">Learn More</button>
+				</div>
+			</div>
+		</div>
+		<!-- THIS IS THE FOURTH CONTAINER -->
+		<div class="fourth container">
+			<div class="fourth__flex">
+				<div class="fourth__element">
+					<img class="fourth__logo" src="img/leaf_1.png" />
+					<h5 class="filler">36</h5>
+					<h6 class="minimum">Languages</h6>
+				</div>
+				<div class="fourth__element">
+					<img class="fourth__logo" src="img/leaf_1.png" />
+					<h5 class="filler">64</h5>
+					<h6 class="minimum">Episodes</h6>
+				</div>
+				<div class="fourth__element">
+					<img class="fourth__logo" src="img/leaf_1.png" />
+					<h5 class="filler">15</h5>
+					<h6 class="minimum">Vocal Artists</h6>
+				</div>
+				<div class="fourth__element">
+					<img class="fourth__logo" src="img/leaf_1.png" />
+					<h5 class="filler">256</h5>
+					<h6 class="minimum">Animators</h6>
+				</div>
+			</div>
+		</div>
+		<!-- THIS IS THE FIFTH CONTAINER -->
+		<div class="fifth container">
+			<div class="fifth__text">
+				<h3 class="minimum">Portfolio</h3>
+				<hr />
+				<h2 class="maximum">Our Amazing Works</h2>
+			</div>
+			<div class="fifth__flex">
+				<div class="fifth__wrapper">
+					<!-- FIRST ONE -->
+					<div class="fifth__block">
+						<div class="fifth__image">
+							<img class="fifth__circle" src="img/pic_1.jpg" />
+						</div>
+						<div class="fifth__text">
+							<h4 class="minimum">Let's learn more together!</h4>
+							<h3 class="fifth__sub">Thousands of new stories to discover</h3>
+							<p class="fuller">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Nesciunt
+								perferendis exercitationem raesentium sunt <br />aut error amet, vero
+								dignissimos provident, fugiat
+							</p>
+							<br />
+							<a class="common" href="#"> ➼ Click here for more </a>
+						</div>
+					</div>
+					<!-- SECOND ONE -->
+					<div class="fifth__block">
+						<div class="fifth__text">
+							<h4 class="minimum">Let's learn more together!</h4>
+							<h3 class="fifth__sub">Thousands of new stories to discover</h3>
+							<p class="fuller">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Nesciunt
+								perferendis exercitationem raesentium sunt <br />aut error amet, vero
+								dignissimos provident, fugiat
+							</p>
+							<br />
+							<a class="common" href="#"> ➼ Click here for more </a>
+						</div>
+						<div class="fifth__image">
+							<img class="fifth__circle" src="img/pic_1.jpg" />
+						</div>
+					</div>
+					<!-- THIRD ONE -->
+					<div class="fifth__block">
+						<div class="fifth__image">
+							<img class="fifth__circle" src="img/pic_1.jpg" />
+						</div>
+						<div class="fifth__text">
+							<h4 class="minimum">Let's learn more together!</h4>
+							<h3 class="fifth__sub">Thousands of new stories to discover</h3>
+							<p class="fuller">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Nesciunt
+								perferendis exercitationem raesentium sunt <br />aut error amet, vero
+								dignissimos provident, fugiat
+							</p>
+							<br />
+							<a class="common" href="#"> ➼ Click here for more </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- THIS IS THE SIXTH SECTION -->
+		<div class="sixth container" style="margin-top: 6vh">
+			<div class="sixth__wrapper">
+				<div class="sixth__flex">
+					<div class="sixth__element">
+						<h4 class="maximum">Are you ready to discover a new world?</h4>
+					</div>
+					<div class="sixth__element">
+						<button class="btn discover">Contact Us</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- THIS IS THE SEVENTH SECTION -->
+		<div class="seventh container">
+			<div class="seventh__text">
+				<h3 class="minimum">Testimonial</h3>
+				<hr />
+				<h2 class="maximum">What People say</h2>
+			</div>
+			<!-- THIS IS THE START -->
+			<div class="seventh__flex">
+				<!-- FIRST BOX-->
+				<div class="seventh__element">
+					<div class="seventh__bg">
+						<div class="seventh__quote">
+							<a class="seventh__quote--item" href="#">❞</a>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis
+							laudantium, aperiam adipisci rem praesentium autem iusto ex! Sequi
+							praesentium, sunt natus vitae fuga iure doloremque voluptatum doloribus
+							maxime magnam.
+						</p>
+						<div class="seventh__block">
+							<img class="seventh__image" src="/img/pic_2.jpg" />
+							<div class="seventh__description">
+								<h6>Akira Toriyama</h6>
+								<span> "One of the best series I've seen!" </span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- SECOND BOX-->
+				<div class="seventh__element">
+					<div class="seventh__bg">
+						<div class="seventh__quote">
+							<a class="seventh__quote--item" href="#">❞</a>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis
+							laudantium, aperiam adipisci rem praesentium autem iusto ex! Sequi
+							praesentium, sunt natus vitae fuga iure doloremque voluptatum doloribus
+							maxime magnam.
+						</p>
+						<div class="seventh__block">
+							<img class="seventh__image" src="/img/pic_2.jpg" />
+							<div class="seventh__description">
+								<h6>Akira Toriyama</h6>
+								<span> "One of the best series I've seen!" </span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- THIRD BOX-->
+				<div class="seventh__element">
+					<div class="seventh__bg">
+						<div class="seventh__quote">
+							<a class="seventh__quote--item" href="#">❞</a>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis
+							laudantium, aperiam adipisci rem praesentium autem iusto ex! Sequi
+							praesentium, sunt natus vitae fuga iure doloremque voluptatum doloribus
+							maxime magnam.
+						</p>
+						<div class="seventh__block">
+							<img class="seventh__image" src="/img/pic_2.jpg" />
+							<div class="seventh__description">
+								<h6>Akira Toriyama</h6>
+								<span> "One of the best series I've seen!" </span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- THIS IS THE EIGHT SECTION -->
+		<div class="eight container" style="margin-bottom: 8vh">
+			<div class="eight__grid">
+				<div class="eight__griditem">LOGO</div>
+				<div class="eight__griditem">LOGO</div>
+				<div class="eight__griditem">LOGO</div>
+				<div class="eight__griditem">LOGO</div>
+				<div class="eight__griditem">LOGO</div>
+				<div class="eight__griditem">LOGO</div>
+				<div class="eight__griditem">LOGO</div>
+				<div class="eight__griditem">LOGO</div>
+				<div class="eight__griditem">LOGO</div>
+				<div class="eight__griditem">LOGO</div>
+				<div class="eight__griditem">LOGO1</div>
+				<div class="eight__griditem">LOGO</div>
+			</div>
 		</div>
 	</body>
 </html>
