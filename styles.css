@@ -573,7 +573,7 @@ a {
 /** QUERY FOR BG **/
 @media (max-width: 800px) {
   .background {
-    background-image: url(../img/wallpaper_2.png);
+    background-image: url(img/wallpaper_2.png);
     height: 100vh;
     width: auto;
   }
@@ -635,7 +635,7 @@ a {
 
 @media (max-width: 800px) {
   .background {
-    background-image: url(../img/wallpaper_2.png);
+    background-image: url(img/wallpaper_2.png);
   }
   .second__flex,
   .third__flex,
