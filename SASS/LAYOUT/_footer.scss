@@ -1,0 +1,76 @@
+.subs {
+	float: right;
+}
+/*! FOOTER !*/
+.footer {
+	padding-bottom: 4vh;
+	background: rgb(255, 134, 90);
+	/*THESE ARE THE BASICS*/
+	&__break {
+		border: 1px solid white;
+	}
+	&__capsule {
+		text-align: left;
+		padding-left: 4rem;
+	}
+
+	/*THESE ARE FOR THE LEFT*/
+	&__lefitems {
+		text-align: left;
+	}
+	&__leftsocial {
+		text-align: left;
+	}
+	/*THESE ARE FOR THE CENTER*/
+	&__links {
+		text-align: left;
+		font-size: 1em;
+		font-weight: 100;
+		margin: 0;
+	}
+
+	&__text {
+		text-align: left;
+	}
+	&__centerlist {
+		text-align: left;
+		list-style: none;
+		padding-bottom: 2vh;
+	}
+	/*THESE ARE FOR THE RIGHT*/
+	&__rightitems {
+		display: block;
+	}
+	&__img {
+		width: 50px;
+		height: 50px;
+		margin: 1vh;
+	}
+	&__img {
+		width: 50px;
+		height: 50px;
+		margin: 1vh;
+	}
+}
+
+/* THIS IS FOR THE SOCIAL MEDIA ICONS */
+.fa {
+	padding-top: 12px;
+	font-size: 1.2em;
+	text-align: left;
+	text-decoration: none;
+	margin: 0.5px;
+}
+
+.fa-facebook {
+	color: #3b5998;
+}
+.fa-twitter {
+	color: #55acee;
+}
+.fa-youtube {
+	color: #bb0000;
+}
+.fa-tumblr {
+	color: #2c4762;
+}

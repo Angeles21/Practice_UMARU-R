@@ -1,5 +1,7 @@
 /* THIS IS FOR ALL THE MEDIA QUERIES */
 /* MINIMUM RES */
+
+/*THIS IS FOR THE NAVIGATION BAR */
 @media only screen and (max-width: 768px) {
 	.capsule {
 		padding: 0 2rem;
@@ -56,6 +58,7 @@
 		}
 	}
 }
+
 @media only screen and (min-width: 769px) {
 	.header {
 		.navbar {
@@ -74,6 +77,24 @@
 					}
 				}
 			}
+		}
+	}
+}
+
+/*THIS IS FOR THE GRID */
+@media (max-width: 1300px) {
+	.eight__grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (max-width: 600px) {
+	.eight {
+		margin: 0;
+		padding: 10%;
+
+		&__grid {
+			grid-template-columns: repeat(2, 1fr);
 		}
 	}
 }
@@ -130,12 +151,17 @@
 }
 
 /** QUERIES FOR RESPONSIVE FLEX **/
+@media (max-width: 1000px) {
+	.second__flex {
+		flex-direction: column;
+		padding: 2vh;
+	}
+}
 
 @media (max-width: 800px) {
 	.background {
 		background-image: url(../img/wallpaper_2.png);
 	}
-
 	.second__flex,
 	.third__flex,
 	.fourth__flex,
@@ -173,16 +199,24 @@
 		padding: 2vh;
 		h4 {
 			font-size: 1.5em;
-			margin-bottom: 4vh;
+			margin-bottom: 7vh;
 		}
 		.discover {
 			font-size: 1em;
 		}
 	}
-
-	.eight {
-		display: none;
+	.seventh {
+		&__element {
+			padding: 1vh;
+		}
 	}
+	.footer {
+		&__capsule {
+			padding: 0;
+			margin: 0;
+		}
+	}
+
 	.fuller {
 		font-size: 1em;
 	}

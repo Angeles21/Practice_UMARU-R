@@ -9,11 +9,21 @@
 		flex-direction: row;
 		text-align: center;
 		align-items: center;
-		padding: 9vh;
+		padding: 8vh;
 		justify-content: center;
 	}
 	&__element {
-		padding: 10px;
+		padding: auto;
+		flex: 50%;
+	}
+}
+
+.footer {
+	&__centeritems {
+		display: flex;
+		flex-direction: row;
+	}
+	&__centerflex {
 		flex: 50%;
 	}
 }

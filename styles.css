@@ -123,7 +123,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 9vh;
+  padding: 8vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -135,10 +135,115 @@ a {
 .sixth__element,
 .seventh__element,
 .footer__element {
-  padding: 10px;
+  padding: auto;
   -webkit-box-flex: 50%;
       -ms-flex: 50%;
           flex: 50%;
+}
+
+.footer__centeritems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer__centerflex {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+}
+
+.subs {
+  float: right;
+}
+
+/*! FOOTER !*/
+.footer {
+  padding-bottom: 4vh;
+  background: #ff865a;
+  /*THESE ARE THE BASICS*/
+  /*THESE ARE FOR THE LEFT*/
+  /*THESE ARE FOR THE CENTER*/
+  /*THESE ARE FOR THE RIGHT*/
+}
+
+.footer__break {
+  border: 1px solid white;
+}
+
+.footer__capsule {
+  text-align: left;
+  padding-left: 4rem;
+}
+
+.footer__lefitems {
+  text-align: left;
+}
+
+.footer__leftsocial {
+  text-align: left;
+}
+
+.footer__links {
+  text-align: left;
+  font-size: 1em;
+  font-weight: 100;
+  margin: 0;
+}
+
+.footer__text {
+  text-align: left;
+}
+
+.footer__centerlist {
+  text-align: left;
+  list-style: none;
+  padding-bottom: 2vh;
+}
+
+.footer__rightitems {
+  display: block;
+}
+
+.footer__img {
+  width: 50px;
+  height: 50px;
+  margin: 1vh;
+}
+
+.footer__img {
+  width: 50px;
+  height: 50px;
+  margin: 1vh;
+}
+
+/* THIS IS FOR THE SOCIAL MEDIA ICONS */
+.fa {
+  padding-top: 12px;
+  font-size: 1.2em;
+  text-align: left;
+  text-decoration: none;
+  margin: 0.5px;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-twitter {
+  color: #55acee;
+}
+
+.fa-youtube {
+  color: #bb0000;
+}
+
+.fa-tumblr {
+  color: #2c4762;
 }
 
 /* MADE UP SAFE SPACE */
@@ -293,12 +398,20 @@ a {
   padding: 3vh 1vh;
 }
 
+.seventh__flex {
+  padding-bottom: 0;
+}
+
+.seventh__element {
+  padding: 1vh;
+}
+
 .seventh__text {
   padding: 2vh 3vh;
 }
 
 .seventh__bg {
-  background-color: #ff865a;
+  background: #ff865a;
   border-radius: 10px;
   padding: 4vh;
 }
@@ -330,8 +443,41 @@ a {
   color: white;
 }
 
+/*! EIGHT !*/
+.eight {
+  padding: 8vh;
+  margin: 0;
+}
+
+.eight__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto auto;
+  text-align: center;
+  grid-gap: 1vh;
+}
+
+.eight__griditem {
+  height: auto;
+  border-radius: 5px;
+  border: 4px solid #ffcdb6;
+  background: #ffe0ca;
+}
+
+.eight__img {
+  margin: 0.5em;
+  width: 120px;
+  height: 60px;
+}
+
+.eight a {
+  margin: 0;
+}
+
 /* THIS IS FOR ALL THE MEDIA QUERIES */
 /* MINIMUM RES */
+/*THIS IS FOR THE NAVIGATION BAR */
 @media only screen and (max-width: 768px) {
   .capsule {
     padding: 0 2rem;
@@ -382,6 +528,25 @@ a {
   }
   .header .navbar .wrapper .menu .header__elements .header__link {
     padding: 15px 20px;
+  }
+}
+
+/*THIS IS FOR THE GRID */
+@media (max-width: 1300px) {
+  .eight__grid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .eight {
+    margin: 0;
+    padding: 10%;
+  }
+  .eight__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -438,6 +603,16 @@ a {
 }
 
 /** QUERIES FOR RESPONSIVE FLEX **/
+@media (max-width: 1000px) {
+  .second__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2vh;
+  }
+}
+
 @media (max-width: 800px) {
   .background {
     background-image: url(../img/wallpaper_2.png);
@@ -480,13 +655,17 @@ a {
   }
   .sixth h4 {
     font-size: 1.5em;
-    margin-bottom: 4vh;
+    margin-bottom: 7vh;
   }
   .sixth .discover {
     font-size: 1em;
   }
-  .eight {
-    display: none;
+  .seventh__element {
+    padding: 1vh;
+  }
+  .footer__capsule {
+    padding: 0;
+    margin: 0;
   }
   .fuller {
     font-size: 1em;
@@ -851,10 +1030,5 @@ body {
   font-family: "Quicksand", sans-serif;
   margin: 0;
   padding: 0;
-}
-
-hr {
-  width: 5%;
-  border-color: #ff865a;
 }
 /*# sourceMappingURL=styles.css.map */
