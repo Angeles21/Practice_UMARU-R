@@ -110,8 +110,7 @@ a {
 .third__flex,
 .fourth__flex,
 .sixth__flex,
-.seventh__flex,
-.footer__flex {
+.seventh__flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,7 +132,24 @@ a {
 .third__element,
 .fourth__element,
 .sixth__element,
-.seventh__element,
+.seventh__element {
+  padding: auto;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+}
+
+.footer__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 4vh;
+}
+
 .footer__element {
   padding: auto;
   -webkit-box-flex: 50%;
@@ -163,7 +179,6 @@ a {
 
 /*! FOOTER !*/
 .footer {
-  padding-bottom: 4vh;
   background: #ff865a;
   /*THESE ARE THE BASICS*/
   /*THESE ARE FOR THE LEFT*/
@@ -175,9 +190,12 @@ a {
   border: 1px solid white;
 }
 
+.footer__element {
+  padding: 3em;
+}
+
 .footer__capsule {
-  text-align: left;
-  padding-left: 4rem;
+  padding-left: 6vh;
 }
 
 .footer__lefitems {
@@ -189,14 +207,9 @@ a {
 }
 
 .footer__links {
-  text-align: left;
   font-size: 1em;
   font-weight: 100;
   margin: 0;
-}
-
-.footer__text {
-  text-align: left;
 }
 
 .footer__centerlist {
@@ -212,13 +225,20 @@ a {
 .footer__img {
   width: 50px;
   height: 50px;
-  margin: 1vh;
+  margin: 2vh;
+  border: 3px solid white;
+  border-radius: 4px;
 }
 
-.footer__img {
-  width: 50px;
-  height: 50px;
-  margin: 1vh;
+.footer__inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__inlinetext {
+  margin-top: 3vh;
+  text-align: center;
 }
 
 /* THIS IS FOR THE SOCIAL MEDIA ICONS */
@@ -663,9 +683,21 @@ a {
   .seventh__element {
     padding: 1vh;
   }
+  .footer__element {
+    padding: 0;
+    margin: 0;
+  }
   .footer__capsule {
     padding: 0;
     margin: 0;
+  }
+  /*EXTRAS */
+  .subs {
+    float: none;
+    padding: 4px 20px;
+    margin-top: 3vh;
+    font-size: 10px;
+    border: 2px solid white;
   }
   .fuller {
     font-size: 1em;

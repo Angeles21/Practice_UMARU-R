@@ -3,15 +3,16 @@
 }
 /*! FOOTER !*/
 .footer {
-	padding-bottom: 4vh;
 	background: rgb(255, 134, 90);
 	/*THESE ARE THE BASICS*/
 	&__break {
 		border: 1px solid white;
 	}
+	&__element {
+		padding: 3em;
+	}
 	&__capsule {
-		text-align: left;
-		padding-left: 4rem;
+		padding-left: 6vh;
 	}
 
 	/*THESE ARE FOR THE LEFT*/
@@ -23,14 +24,9 @@
 	}
 	/*THESE ARE FOR THE CENTER*/
 	&__links {
-		text-align: left;
 		font-size: 1em;
 		font-weight: 100;
 		margin: 0;
-	}
-
-	&__text {
-		text-align: left;
 	}
 	&__centerlist {
 		text-align: left;
@@ -44,12 +40,16 @@
 	&__img {
 		width: 50px;
 		height: 50px;
-		margin: 1vh;
+		margin: 2vh;
+		border: 3px solid rgb(255, 255, 255);
+		border-radius: 4px;
 	}
-	&__img {
-		width: 50px;
-		height: 50px;
-		margin: 1vh;
+	&__inline {
+		display: flex;
+	}
+	&__inlinetext {
+		margin-top: 3vh;
+		text-align: center;
 	}
 }
 

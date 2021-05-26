@@ -2,8 +2,7 @@
 .third,
 .fourth,
 .sixth,
-.seventh,
-.footer {
+.seventh {
 	&__flex {
 		display: flex;
 		flex-direction: row;
@@ -19,6 +18,15 @@
 }
 
 .footer {
+	&__flex {
+		display: flex;
+		flex-direction: row;
+		margin: 0 4vh;
+	}
+	&__element {
+		padding: auto;
+		flex: 50%;
+	}
 	&__centeritems {
 		display: flex;
 		flex-direction: row;
