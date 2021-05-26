@@ -314,7 +314,7 @@ a {
 /* THESE ARE GENERAL VALUES PER SECTION */
 /*! FIRST !*/
 .background {
-  background-image: url(img/wallpaper_1.png);
+  background-image: url(./img/wallpaper_1.png);
   height: 100vh;
   width: auto;
   background-repeat: no-repeat;
